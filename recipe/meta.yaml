@@ -1,18 +1,18 @@
 {% set name = "httpcore" %}
-{% set version = "0.4.0" %}
+{% set version = "0.6.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 64a6bb0ed24d8535191d392d06dcd5071d363ce2c2b8f5db1062b503ba95f3b5
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: e1cc729d4ab7743c00d966db9a5bbb053dfd8e6a4e4ec0174fb8c21f39c36774
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv "
+  script: '{{ PYTHON }} -m pip install . -vv '
 
 requirements:
   host:
