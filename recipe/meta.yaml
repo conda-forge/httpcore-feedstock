@@ -23,7 +23,7 @@ requirements:
     - h11 >=0.8,<0.10
     - h2 ==3.*
     - python >=3.6
-    - sniffio==1.*    
+    - sniffio ==1.*    
 
 test:
   imports:
@@ -31,7 +31,7 @@ test:
 
 about:
   home: https://github.com/encode/httpcore
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.md
   summary: The next generation HTTP client.
