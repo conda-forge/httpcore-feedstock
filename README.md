@@ -5,7 +5,7 @@ Home: https://github.com/encode/httpcore
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: The next generation HTTP client.
 
