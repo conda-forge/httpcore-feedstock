@@ -21,7 +21,7 @@ requirements:
     - setuptools
   run:
     - h11 ==0.*
-    - h2 >=3,<=5
+    - h2 >=3,<5
     - python >=3.6
     - sniffio ==1.*
 
