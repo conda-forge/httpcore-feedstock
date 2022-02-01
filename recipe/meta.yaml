@@ -1,5 +1,5 @@
 {% set name = "httpcore" %}
-{% set version = "0.14.5" %}
+{% set version = "0.14.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 435ab519628a6e2393f67812dea3ca5c6ad23b457412cd119295d9f906d96a2b
+  sha256: d1ba9926a7b761bfb92d171df81ac9f87f549533cc8fcbcffca6943d3fccabf7
 
 build:
   noarch: python
