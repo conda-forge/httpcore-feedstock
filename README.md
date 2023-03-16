@@ -1,11 +1,11 @@
-About httpcore
-==============
+About httpcore-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/httpcore-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/encode/httpcore
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/httpcore-feedstock/blob/main/LICENSE.txt)
 
 Summary: The next generation HTTP client.
 
