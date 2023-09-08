@@ -17,10 +17,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
-    - setuptools
+    - python >=3.8
+    - hatchling
+    - hatch-fancy-pypi-readme
+
   run:
-    - python >=3.7
+    - python >=3.8
     - h11 >=0.13,<0.15
     - h2 >=3,<5
     - sniffio ==1.*
