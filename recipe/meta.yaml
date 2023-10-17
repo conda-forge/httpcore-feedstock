@@ -11,8 +11,8 @@ source:
 
 build:
   noarch: python
-  number: 0
-  script: '{{ PYTHON }} -m pip install . -vv '
+  number: 1
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
@@ -23,11 +23,8 @@ requirements:
 
   run:
     - python >=3.8
-    - h11 >=0.13,<0.15
-    - h2 >=3,<5
-    - sniffio ==1.*
-    - anyio >=3.0,<5.0
     - certifi
+    - h11 >=0.13,<0.15
 
 test:
   requires:
