@@ -25,7 +25,7 @@ requirements:
     - python >=${{ python_min }}
     - h11 >=0.13,<0.15
     - h2 >=3,<5
-    - sniffio ==1.*
+    - sniffio 1.*
     - anyio >=3.0,<5.0
     - certifi
 
