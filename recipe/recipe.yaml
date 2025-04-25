@@ -1,6 +1,7 @@
+schema_version: 1
+
 context:
-  version: 1.0.7
-  python_min: "3.8"
+  version: 1.0.9
 
 package:
   name: httpcore
@@ -8,25 +9,25 @@ package:
 
 source:
   url: https://pypi.org/packages/source/h/httpcore/httpcore-${{ version }}.tar.gz
-  sha256: 8551cb62a169ec7162ac7be8d4817d561f60e08eaa485234898414bb5a8a0b4c
+  sha256: 6e34463af53fd2ab5d807f399a9b45ea31c3dfa2276f15a2c3f00afff6e176e8
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: python -m pip install . -vv
+  script: python -m pip install . -vv --no-build-isolation --no-deps
 
 requirements:
   host:
     - pip
-    - python ${{ python_min }}
+    - python ${{ python_min }}.*
     - hatchling
     - hatch-fancy-pypi-readme
   run:
     - python >=${{ python_min }}
-    - h11 >=0.13,<0.15
+    - h11 >=0.16
     - h2 >=3,<5
     - sniffio 1.*
-    - anyio >=3.0,<5.0
+    - anyio >=4.0,<5.0
     - certifi
 
 tests:
@@ -34,11 +35,7 @@ tests:
       imports:
         - httpcore
       pip_check: true
-  - requirements:
-      run:
-        - python ${{ python_min }}
-    script:
-      - python -c "import httpcore"
+      python_version: python ${{ python_min }}.*
 
 about:
   license: BSD-3-Clause
